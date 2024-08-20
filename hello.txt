@@ -1,0 +1,7 @@
+SELECT * FROM suppliers,parts,projects,ship WHERE suppliers.supplier_number = ship.project_project_number AND quantity<750;
+
+SELECT* FROM suppliers,parts,projects,ship WHERE suppliers.supplier_number =ship.supplier_number AND projects.city = 'Bombay';
+
+SELECT * FROM suppliers,parts,projects,ship WHERE  suppliers.supplier_number = ship.supplier_number AND parts.part_number =ship.part_number AND projects.project_number = ship.project_number;
+
+SELECT supplier_name FROM suppliers,ship WHERE supplier_number =ship.supplier_number AND project_number = 'J
